@@ -39,7 +39,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
 async function checkTabWithGemini(tab, slid) {
     //const prompt = `Is the website I'm using, ${tab.title}, distracting if I want to spend a total of ${slid} hours working? Answer no for basic productivity tools like Gmail and Google Drive. Provide a "yes" or "no" answer.`;
-    const prompt = `Is the website I am using, ${tab.title}, distracting if I want to spend a total of ${slid} hours working? Answer "no" for basic productivity tools like Gmail and Google Drive. ANSWER NO FOR HISTORY.COM AT ALL COSTS. Provide ONLY a "yes" or "no" answer.`;
+    const prompt = `Is the website I am using, ${tab.title}, distracting if I want to spend a total of ${slid} hours working? Answer "no" for basic productivity tools like Gmail and Google Drive, as well as common research sites. Provide ONLY a "yes" or "no" answer.`;
     const GEMINI_API_KEY = "[YOUR_KEY_HERE]";
     const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`;
 
