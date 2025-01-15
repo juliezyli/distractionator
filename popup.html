@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Distractionator </title>
+        <meta name="description" value="Stop procrastinating now!">
+        <meta name="google-signin-client_id" content="440104668074-psbbv2a42gmc1pvrgqt2b197q2a7v4uu.apps.googleusercontent.com">
+        <meta charset="UTF-8">
+        <style>
+            .button1 {
+                align-items: center;
+                background-clip: padding-box;
+                background-color:#a6e8ae;
+                border: 1px solid rgb(241, 171, 171);
+                border-radius: .25rem;
+                box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+                box-sizing: border-box;
+                color: #000000;
+                cursor: pointer;
+                display: inline-flex;
+                font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                justify-content: center;
+                line-height: 1.25;
+                margin: 0;
+                min-height: 3rem;
+                padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+                position: relative;
+            }
+            .clas {
+                font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+                vertical-align: -20px;
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(142, 227, 238);">
+        <h3 style="text-align: center;" class="clas"> Welcome to the Distractionator! </h3>
+        <input type="range" id="slider-input" min="0" max="10" />
+        <label for="slider-input"> hours you want to work </label>
+        <input id="max-tabs">
+        <label for="max-tabs"> maximum tabs to close </label>
+        <div style="text-align: center">
+            <!-- HTML !-->
+             <button id="close-tabs" type="button" class="button1"> click for no distractions </button>
+        </div>
+        <p id="status" style="text-align: center;"></p>
+        <script src="popup.js"></script>
+    </body>
+</html>
